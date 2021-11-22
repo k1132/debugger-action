@@ -5,9 +5,5 @@ name: 'Debugger'
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-runs:
-  using: 'node12'
-  main: 'action.js'
-branding:
-  icon: 'terminal'
-  color: 'green'
+-name: Setup Debug Session
+  uses: csexton/debugger-action@master
